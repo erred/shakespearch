@@ -4,7 +4,7 @@
 
 1. better search backend
 2. highlight search result
-3. link to full context of search result?
+3. link to full context of search result
 4. run data through sentiment analysis
 
 ## Implemented
@@ -21,15 +21,16 @@ easy way out is to search for preparsed data, found in [Elastic Kibana tutorial]
 ## Not implemented
 
 **Better UI:**
+too long since I touched frontend code, need more time (than 2h) to ramp back up.
 
 **Hint user about possible search operators:**
 Algolia doesn't have easily findable docs on it.
+
+**Serve full text and link from search result:**
+Need to restructure data for serving / linking.
 
 **Sentiment analysis:**
 Run the data through [GCP Natural Language](https://cloud.google.com/natural-language), one time cost (Shakespeare isn't going to revive and start writing more stuff). Not done due to:
 
 - lack of time
 - no effective way of presenting the data (need frontend work)
-
-**Serve full text and link from search result:**
-Need to restructure data for serving / linking.
