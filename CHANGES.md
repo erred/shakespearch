@@ -1,0 +1,35 @@
+# Changes
+
+## Initial ideas
+
+1. better search backend
+2. highlight search result
+3. link to full context of search result?
+4. run data through sentiment analysis
+
+## Implemented
+
+Due to 1 and 4, the search backend should support structure data:
+selected [Algolia](https://www.algolia.com/) for ease of use and included highlights for 2.
+
+Algolia requires structured data:
+easy way out is to search for preparsed data, found in [Elastic Kibana tutorial](https://www.elastic.co/guide/en/kibana/6.8/tutorial-load-dataset.html).
+
+- TODO: This might not include the sonnets
+- Alternative source (split plain text): https://github.com/okfn/shakespeare-material/tree/master/texts/gutenberg
+
+## Not implemented
+
+**Better UI:**
+
+**Hint user about possible search operators:**
+Algolia doesn't have easily findable docs on it.
+
+**Sentiment analysis:**
+Run the data through [GCP Natural Language](https://cloud.google.com/natural-language), one time cost (Shakespeare isn't going to revive and start writing more stuff). Not done due to:
+
+- lack of time
+- no effective way of presenting the data (need frontend work)
+
+**Serve full text and link from search result:**
+Need to restructure data for serving / linking.
