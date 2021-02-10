@@ -18,18 +18,21 @@ easy way out is to search for preparsed data, found in [Elastic Kibana tutorial]
 - TODO: This might not include the sonnets
 - Alternative source (split plain text): https://github.com/okfn/shakespeare-material/tree/master/texts/gutenberg
 
+Basic styling with [milligram](https://milligram.io/):
+I've used it (a long time ago), doesn't require too much work to look half decent.
+
 ## Not implemented
 
 **Better UI:**
 too long since I touched frontend code, need more time (than 2h) to ramp back up.
 
-**Hint user about possible search operators:**
-Algolia doesn't have easily findable docs on it.
-
 **Serve full text and link from search result:**
 Data in static/texts but needs restructuring
 / crosslinking with the indexed data,
 or reindex using the plain text.
+
+**Hint user about possible search operators:**
+Algolia doesn't have easily findable docs on it.
 
 **Sentiment analysis:**
 Run the data through [GCP Natural Language](https://cloud.google.com/natural-language), one time cost (Shakespeare isn't going to revive and start writing more stuff). Not done due to:

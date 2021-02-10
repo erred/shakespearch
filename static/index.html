@@ -1,27 +1,40 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ShakeSearch</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
 
-<head>
-  <meta charset="utf-8">
-  <title>ShakeSearch</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
 
-<body>
-    <p>
-        <form id="form">
-            <label for="query">Query</label>
-            <input type="text" id="query" name="query">
-            <button type="submit">Search</button>
-        </form>
-    </p>
-    <p>
-        <table id="table">
-          <tbody id="table-body"></tbody>
-        </table>
-    </p>
-  <script src="app.js"></script>
-</body>
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>ShakeSearch</h1>
+    <p>search stuff by Shakespeare</p>
+    <form>
+      <fieldset>
+        <label for="query">Query</label>
+        <input type="text" id="query" name="query" placeholder="Hamlet" />
+        <input class="button-primary" type="submit" value="send" />
+      </fieldset>
+    </form>
+    <table id="table">
+      <thead>
+        <tr>
+          <td>Play</td>
+          <td>Speaker</td>
+          <td>Text</td>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script src="app.js"></script>
+  </body>
 </html>
