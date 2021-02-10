@@ -69,7 +69,10 @@ type Algolia struct {
 }
 
 func (a *Algolia) Search(q string) ([]Result, error) {
-	r, err := a.index.Search(q, opt.HitsPerPage(1000))
+	r, err := a.index.Search(q,
+		opt.HitsPerPage(1000),
+		opt.AdvancedSyntax(true),
+	)
 	if err != nil {
 		return nil, fmt.Errorf("algolia search: %w", err)
 	}
