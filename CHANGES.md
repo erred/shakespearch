@@ -27,10 +27,14 @@ too long since I touched frontend code, need more time (than 2h) to ramp back up
 Algolia doesn't have easily findable docs on it.
 
 **Serve full text and link from search result:**
-Need to restructure data for serving / linking.
+Data in static/texts but needs restructuring
+/ crosslinking with the indexed data,
+or reindex using the plain text.
 
 **Sentiment analysis:**
 Run the data through [GCP Natural Language](https://cloud.google.com/natural-language), one time cost (Shakespeare isn't going to revive and start writing more stuff). Not done due to:
 
 - lack of time
 - no effective way of presenting the data (need frontend work)
+
+maybe making google crawl the site would have been faster...
