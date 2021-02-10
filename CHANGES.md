@@ -1,11 +1,14 @@
 # Changes
 
+available at: https://shakespearch.herokuapp.com/
+
 ## Initial ideas
 
 1. better search backend
 2. highlight search result
 3. link to full context of search result
 4. run data through sentiment analysis
+5. incremental search
 
 ## Implemented
 
@@ -23,16 +26,20 @@ I've used it (a long time ago), doesn't require too much work to look half decen
 
 ## Not implemented
 
+in order of priority
+
+**Serve full text and link from search result:**
+Data in [static/texts](./static/texts/) but needs restructuring / crosslinking with the indexed data,
+or reindex using the plain text.
+
 **Better UI:**
 too long since I touched frontend code, need more time (than 2h) to ramp back up.
 
-**Serve full text and link from search result:**
-Data in static/texts but needs restructuring
-/ crosslinking with the indexed data,
-or reindex using the plain text.
-
 **Hint user about possible search operators:**
 Algolia doesn't have easily findable docs on it.
+
+**Incremental search:**
+more frontend work
 
 **Sentiment analysis:**
 Run the data through [GCP Natural Language](https://cloud.google.com/natural-language), one time cost (Shakespeare isn't going to revive and start writing more stuff). Not done due to:
